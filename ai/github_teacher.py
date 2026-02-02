@@ -35,9 +35,9 @@ def _extract_json(text: str) -> str:
 
 def evaluate(word: str, target_meaning: str, student_answer: str, persona: str) -> dict:
 
-    print("ENDPOINT =", ENDPOINT)
-    print("MODEL =", MODEL)
-    print("TOKEN starts =", (TOKEN or "")[:6])
+    #print("ENDPOINT =", ENDPOINT)
+    #print("MODEL =", MODEL)
+    #print("TOKEN starts =", (TOKEN or "")[:6])
     if not TOKEN:
         raise RuntimeError("Missing GITHUB_TOKEN. Copy .env.example to .env and set your token.")
 
